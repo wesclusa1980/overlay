@@ -4,11 +4,11 @@ const path = require('path');
 const axios = require('axios');
 const XLSX = require('xlsx');
 const fs = require('fs');
-const port = process.env.PORT || 3000; // Use Heroku's dynamic port or 3000 if locally
+const port = process.env.PORT || 80; // Use Heroku's dynamic port or 3000 if locally
 
 
 const app = express();
-const port = 3000;
+
 
 async function fetchLogoFromClearbit(domainName) {
     const endpoint = `https://logo.clearbit.com/${domainName}`;
